@@ -1,0 +1,144 @@
+@define-color text_color #ffffff;
+@define-color text_shadow_color #908DEE;
+@define-color accent_color rgba(127, 179, 211, 0.7);
+@define-color hover_color rgba(127, 179, 211, 0.3);
+@define-color workspace_urgent_color #F69290;
+@define-color border_color rgba(255, 255, 255, 0.7);
+@define-color bar_color transparent;
+
+* {
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: @text_color;
+    text-shadow: 1px 1px 2px @text_shadow_color;
+}
+
+window#waybar {
+    background-color: @bar_color;
+    border-bottom: 3px solid @border_color;
+    color: @text_color;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.termite {
+    background-color: @bar_color;
+}
+
+window#waybar.chromium {
+    background-color: @bar_color;
+    border: none;
+}
+
+button {
+    box-shadow: inset 0 -3px @bar_color;
+    border: none;
+    border-radius: 0;
+    color: @text_color;
+    font-weight: 500;
+}
+
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px @text_color;
+}
+
+#pulseaudio:hover,
+#clock:hover {
+    background-color: @hover_color;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: @bar_color;
+    color: @text_color;
+    font-weight: 500;
+}
+
+#workspaces button:hover {
+    background: @hover_color;
+}
+
+#workspaces button.focused, #workspaces button.active {
+    background-color: @accent_color;
+    box-shadow: inset 0 -3px @text_color;
+    color: @text_color;
+    font-weight: 500;
+}
+
+#workspaces button.urgent {
+    background-color: @workspace_urgent_color;
+    color: @text_color;
+    font-weight: 500;
+}
+
+#mode {
+    background-color: @bar_color;
+    box-shadow: inset 0 -3px @text_color;
+    color: @text_color;
+    font-weight: 500;
+}
+
+#clock,
+#temperature,
+#pulseaudio,
+#tray {
+    padding: 0 10px;
+    color: @text_color;
+    background-color: @bar_color;
+    font-weight: 500;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+#pulseaudio {
+    color: @text_color;
+    font-weight: 500;
+}
+
+#pulseaudio.muted {
+    background-color: @bar_color;
+    color: @text_color;
+    font-weight: 500;
+}
+
+#pulseaudio:active,
+#clock:active {
+    background-color: @hover_color;
+}
+
+#temperature {
+    color: @text_color;
+    font-weight: 500;
+}
+
+#temperature.critical {
+    background-color: @bar_color;
+    color: @text_color;
+    font-weight: 500;
+}
+
+#tray {
+    color: @text_color;
+    font-weight: 500;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @bar_color;
+    color: @text_color;
+    font-weight: 500;
+}
+
