@@ -1,6 +1,8 @@
 <h1 align="center"> A Simple, Minimal Waybar Theme </h1>
 
-![Preview](https://raw.githubusercontent.com/nagnagi/simple-waybar/refs/heads/main/preview.png)
+![Preview1](https://raw.githubusercontent.com/nagnagi/simple-waybar/refs/heads/main/preview-1.png)
+
+![Preview2](https://raw.githubusercontent.com/nagnagi/simple-waybar/refs/heads/main/preview-2.png)
 
 ---
 
