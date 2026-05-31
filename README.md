@@ -8,8 +8,6 @@
 
 <p align="right"> By nagnagi ^-^ </p>
 
-=> [日本語版READMEはこちら](https://github.com/nagnagi/simple-waybar/blob/main/README-ja.md)
-
 ## Features
 
 - A simple and minimal white-themed Waybar.
