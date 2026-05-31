@@ -1,10 +1,10 @@
 <h1 align="center"> A Simple, Minimal Waybar Theme </h1>
 
-(By nagnagi `^-^`)
-
 ![Preview](https://raw.githubusercontent.com/nagnagi/simple-waybar/refs/heads/main/preview.png)
 
 ---
+
+<p align="right"> By nagnagi ^-^ </p>
 
 ## 特徴 (Features)
 
